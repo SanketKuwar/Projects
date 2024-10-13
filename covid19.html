@@ -1,0 +1,472 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Sanket Kuwar' Projects</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+
+
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<a href="Homepage.html" class="logo"><strong>HOME</strong></a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="landing.html">Landing</a></li>
+				<li><a href="generic.html">Generic</a></li>
+				<li><a href="elements.html">Elements</a></li>
+			</ul>
+			<ul class="actions stacked">
+				<li><a href="#" class="button primary fit">Get Started</a></li>
+				<li><a href="#" class="button fit">Log In</a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main" class="alt">
+
+			<!-- Title -->
+			<section id="Title">
+				<div class="inner">
+					<header class="major">
+						<h1>🛠️<i>PROJECT ARCHITECTURE - COVID 19 PROJECT</i></h1>
+					</header>
+					<span class="image main"><img src="images/Image.png" alt="" /></span>
+					<ul class="actions fit">
+
+						<li><a href="#one" class="button next scrolly">Project Overview</a></li>
+						<li><a href="#two" class="button next scrolly">Ingestion</a></li>
+						<li><a href="#three" class="button next scrolly">Transformation</a></li>
+						<li><a href="#four" class="button next scrolly">Loading</a></li>
+					</ul>
+					<!-- One -->
+					<section id="one">
+
+						<center>
+							<h2>PROJECT OVERVIEW</h2>
+
+						</center>
+
+						<div class="row">
+							<div class="col-6 col-12-small">
+
+								<h4>Tech Stacks:</h4>
+								<ul>
+									<li>Azure Data Factory</li>
+									<li>Azure Databricks</li>
+									<li>Azure Blob Storage</li>
+									<li>Azure Data Lake Storage Gen 2</li>
+									<li>Azure SQL Database</li>
+									<li>Power BI</li>
+								</ul>
+
+
+							</div>
+							<h4>My project architecture is built upon a set of Azure technologies to effectively manage
+								data
+								integration, transformation, and reporting. Here's a breakdown of each component:</h4>
+							<h4>✅Data Integration and Orchestration:</h4>
+							<ul>
+								<li><u><i><strong>Azure Data Factory (ADF):</u></i></strong> ADF plays a central role in
+									my
+									project, handling data integration and orchestration tasks. It connects seamlessly
+									with
+									various data sources and offers a wide range of connectors for future expansion. ADF
+									coordinates workflow execution, including transformations in HDInsight and Azure
+									Databricks.</li>
+
+							</ul>
+
+							<h4>✅Storage Solutions:</h4>
+							<ul>
+								<li><u><i><strong>Azure Blob Storage:</u></i></strong> Here, I store population data,
+									serving as a central distribution point and making data accessible to different
+									teams.
+								</li>
+								<li><u><i><strong>Azure Data Lake Storage Gen 2:</u></i></strong> This robust Data Lake
+									can
+									handle extensive data volumes while ensuring strong performance and security.</li>
+								<li><u><i><strong>Azure SQL Database:</u></i></strong> My data warehouse solution,
+									chosen
+									for its scalability and parallel processing capabilities.</li>
+							</ul>
+
+
+							<h4>✅Transformation Technologies:</h4>
+							<ul>
+								<li><u><i><strong>Data Flow within Data Factory: </u></i></strong> This component offers
+									a
+									code-free approach for data transformation, making it suitable for simple to
+									moderately
+									complex tasks.</li>
+								<li><u><i><strong>HDInsight and Azure Databricks:</u></i></strong> For more complex
+									transformations, HDInsight and Azure Databricks come into play. These require coding
+									in
+									languages like Python or Spark SQL, providing flexibility and scalability for
+									intricate
+									transformations.</li>
+
+							</ul>
+
+
+							<h4>✅Reporting:</h4>
+							<h4></h4>
+							<ul>
+
+								<li><u><i><strong>Power BI: </u></i></strong> This component offers a code-free approach
+									for
+									data transformation, making it suitable for simple to moderately complex tasks.</li>
+								<!-- <li><u><i><strong>HDInsight and Azure Databricks:</u></i></strong> For more complex transformations, HDInsight and Azure Databricks come into play. These require coding in languages like Python or Spark SQL, providing flexibility and scalability for intricate transformations.</li> -->
+
+							</ul>
+						</div>
+
+					</section>
+
+					<!-- Two -->
+					<section id="two">
+
+						<center>
+							<h2>INGESTION</h2>
+						</center>
+						<h4>My goal is to collect population data from Azure Blob Storage and save it to our data lake.
+							To accomplish this, I will be using Azure Data Factory and the ingestion methods are as
+							follows:</h4>
+						<ul>
+							<li><u><i><strong>Data Ingestion from Azure Blog:</u></i></strong>
+							</li>
+							<li><u><i><strong>Data Ingestion from HTTP (Git):</u></i></strong> </li>
+						</ul>
+
+						<center>
+							<h4>1. Data Ingestion from Azure Blog </h4>
+						</center>
+
+						<span class="image main"><img src="images/Injection_activity_1.png" alt="" /></span>
+
+
+						<h4>Here's a step-by-step breakdown of what I covered:</h4>
+
+						<h5>✅<u><i><strong>Copy Activity</u></i></strong> I started by introducing the Copy
+							Activity, a fundamental component for data movement.</h5>
+						<h5>✅<u><i><strong>Creating Link Services and Datasets</u></i></strong> I meticulously set
+							up the required link services and datasets to ensure seamless data flow.</h5>
+						<h5>✅<u><i><strong>Pipeline Construction</u></i></strong> I assembled these components into
+							a robust pipeline that executes flawlessly.</h5>
+						<h5>✅<u><i><strong>Triggers for Automation</u></i></strong> I implemented triggers to
+							automate workflow scheduling for data pipelines, ensuring efficient data processing.
+						</h5>
+
+						<br>
+						<center>
+							<h4>2. Data Ingestion from HTTP (Git) </h4>
+						</center>
+
+
+						<p><span class="image right" id="popup"><img src="images/Injection.png" alt="" />
+
+								<h4>Here's a step-by-step breakdown of what I covered:</h4>
+								<h5>✅<u><i><strong>Exploration of ECDC Data</u></i></strong> I began by touring the ECDC
+									website
+									and delving into the specifics of the data we needed.</h5>
+								<h5>✅<u><i><strong>Pipeline Creation</u></i></strong> I initiated the process by
+									creating the
+									initial pipeline to ingest one of the files</h5>
+								<h5>✅<u><i><strong>Dynamic Pipelines</u></i></strong> I introduced the concept of
+									pipeline
+									variables and parameters to make our pipelines more dynamic.</h5>
+								<h5>✅<u><i><strong>Parameter Passing</u></i></strong> I: I explored passing parameters
+									from link
+									services into datasets.</h5>
+								<h5>✅<u><i><strong>Metadata-Driven Pipeline</u></i></strong> Finally, I combined
+									everything to
+									create a metadata-driven pipeline that efficiently ingests data from the ECDC
+									website into
+									our Data Lake.</h5>
+								<span class="image main"><img src="images/IG_2.png" alt="" /></span>
+
+					</section>
+					<!-- Three -->
+					<section id="three">
+
+						<center>
+							<h2>TRANSFORMATION</h2>
+						</center>
+						<h4>My goal was to transform the cases , deaths and Hospital Admission data that had been
+							ingested into our data lake from the ECDC website.This involved creating a data flows that
+							incorporated several critical transformations, each serving a unique purpose: </h4>
+						<center>
+							<h3>1. Tranformation using Data Flows
+
+							</h3>
+						</center>
+						<ul>
+							<li><u><i><strong>Data Flows - Cases & Deaths Data Transformation:</u></i></strong>
+							</li>
+							<li><u><i><strong>Data Flows - Hospital Admissions Data Tranformation:</u></i></strong>
+							</li>
+						</ul>
+						<center>
+							<h3>⭐Data Flows - Cases & Deaths Data Transformation:</h3>
+						</center>
+
+						<span class="image main"><img src="images/Cases_Tranform.png" alt="" /></span>
+
+						<h4>Here's a step-by-step breakdown of what I covered:</h4>
+						<h5>✅<u><i><strong>Source Transformation:</u></i></strong> This step allowed me to define the
+							source of the data, ensuring it was properly structured and accessible for further
+							processing.</h5>
+						<h5>✅<u><i><strong>Filter Transformation:</u></i></strong> With this transformation, I could
+							selectively extract relevant data points based on specific criteria, eliminating unnecessary
+							information.</h5>
+						<h5>✅<u><i><strong>Select Transformation:</u></i></strong> I used this transformation to pick
+							and choose specific columns or attributes from the dataset, streamlining the data for our
+							analysis needs.</h5>
+						<h5>✅<u><i><strong>Pivot Transformation: </u></i></strong> This transformation enabled me to
+							reshape the data, making it more conducive for analytical tasks that required a different
+							data structure.</h5>
+						<h5>✅<u><i><strong>Lookup Transformation:</u></i></strong> By implementing lookup
+							transformations, I could enrich our data with additional information from external sources,
+							enhancing its value.</h5>
+						<h5>✅<u><i><strong>Sync Transformations:</u></i></strong> Finally, the sync transformations
+							helped ensure that the transformed data remained synchronized and up-to-date with our
+							analysis requirements.</h5>
+
+
+
+						<center>
+							<h3>⭐Data Flows - Hospital Admissions Data Tranformation:</h3>
+						</center>
+
+						<span class="image main"><img src="images/Hospital_Transformation.png" alt="" /></span>
+
+						<h4>Here's a step-by-step breakdown of what I covered:</h4>
+						<h5>✅<u><i><strong>Source Transformation:</strong></i></u> This step introduced source
+							transformations, a fundamental aspect of data processing where data is extracted from
+							various sources for further manipulation.</h5>
+
+						<h5>✅<u><i><strong>Select Transformation:</strong></i></u> I learned about the select
+							transformation, which involves filtering and structuring data to meet specific criteria.
+						</h5>
+
+						<h5>✅<u><i><strong>Lookup Country:</strong></i></u> The lookup country transformation allowed me
+							to enrich the data with additional information, enhancing its value for analysis.</h5>
+
+						<h5>✅<u><i><strong>Conditional Split Transformation:</strong></i></u> Conditional split
+							transformations helped me route and manage data based on predefined conditions, ensuring
+							efficient data handling.</h5>
+
+						<h5>✅<u><i><strong>Derived Column Transformation:</strong></i></u> I explored derived column
+							transformations, a technique for creating new data columns from existing ones, expanding the
+							dataset's utility.</h5>
+
+						<h5>✅<u><i><strong>Aggregate Transformation:</strong></i></u> This module covered aggregate
+							transformations, which are essential for summarizing and aggregating data for analysis.</h5>
+
+						<h5>✅<u><i><strong>Join Transformation:</strong></i></u> I delved into join transformations,
+							which enable the merging of data from multiple sources for comprehensive analysis.</h5>
+
+						<h5>✅<u><i><strong>Pivot Transformation:</strong></i></u> Pivot transformations allowed me to
+							reshape data, facilitating better visualization and analysis.</h5>
+
+						<h5>✅<u><i><strong>Sort Transformation:</strong></i></u> Sorting data is crucial for meaningful
+							analysis, and this module provided insights into effective data sorting techniques.</h5>
+
+						<h5>✅<u><i><strong>Sink Transformation:</strong></i></u> The sink transformation guided me in
+							storing the transformed data in the desired location efficiently.</h5>
+
+						<h5>✅<u><i><strong>Create ADF Pipeline:</strong></i></u> Creating an Azure Data Factory (ADF)
+							pipeline was a pivotal step, streamlining the entire data transformation process and
+							ensuring repeatability.</h5>
+
+						<center>
+							<h3>2. Tranformation using HDInsight</h3>
+						</center>
+
+						<span class="image right"><img src="images/HD_insight.png" alt="" /></span></a>
+
+						<h5> ✅<u><i><strong>Create HDInsight Cluster</strong></i></u> I initiated the process by
+							creating an HDInsight cluster, a crucial step to enable the use of the HDInsight activity
+							within Data Factory. This step also included a detailed walkthrough.</h5>
+
+						<h5> ✅<u><i><strong>Create ADF Pipeline with Hive Activity</strong></i></u> I structured all
+							components into an Azure Data Factory (ADF) pipeline, incorporating the Hive activity for
+							data transformation. This pipeline setup and explanation were part of this step.</h5>
+
+						<h5> ✅<u><i><strong>Delete HDInsight Cluster</strong></i></u> To optimize resource management, I
+							highlighted the importance of deleting the HDInsight cluster when it's not in use.</h5>
+
+						<center>
+							<h3>3. Tranformation using DataBricks</h3>
+						</center>
+
+						<span class="image left"><img src="images/Databricks.png" alt="" /></span>
+
+
+
+						<h5> ✅<u><i><strong>Create Azure Databricks Service</strong></i></u> I initiated the project by
+							creating an Azure Databricks service and introduced the service's user interface.</h5>
+
+						<h5> ✅<u><i><strong>Create Azure Databricks Cluster</strong></i></u> Next, I created an Azure
+							Databricks cluster, which allowed us to mount our storage accounts into the Databricks
+							workspace.</h5>
+
+						<h5> ✅<u><i><strong>Mounting Azure Data Lake Storage</strong></i></u> I ensured seamless data
+							access by mounting the storage account for Azure Block Storage and the Data Lake into our
+							Databricks workspace.</h5>
+
+
+						<h5> ✅<u><i><strong>Create ADF Pipeline Databricks Notebook Activity</strong></i></u> I
+							organized all components into an Azure Data Factory (ADF) pipeline and incorporated the
+							Databricks Notebook activity. This activity executed the transformation logic contained in
+							the notebook, streamlining data processing.</h5>
+
+						<ul class="actions fit">
+
+							<li><a href="https://raw.githubusercontent.com/SanketKuwar/projects.github.io/main/DataBricks_mount.py"
+									target="_blank" class="button next scrolly">View Code : DataBricks_mount</a></li>
+							<li><a href="https://raw.githubusercontent.com/SanketKuwar/projects.github.io/main/Databricks_transform_population_data.py"
+									target="_blank" class="button next scrolly">View Code : DataBricks Tranform
+									Population Data</a></li>
+						</ul>
+
+
+
+					</section>
+
+
+			</section>
+
+		</div>
+
+		<!-- Main -->
+		<div id="abc">
+
+			<!-- Intro -->
+			<article id="intro">
+				<h2 class="major">Intro</h2>
+				<span class="image main"><img src="images/Injection_activity_1.png" alt="" /></span>
+				<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum
+					congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut
+					magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a
+						href="#work">awesome work</a>.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent
+					taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique
+					libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut
+					ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor.
+					Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique
+					senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus.
+					Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+			</article>
+
+		</div>
+
+
+		<!-- Contact -->
+		<!-- <section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">information@untitled.tld</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(000) 000-0000 x12387</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>1234 Somewhere Road #5432<br />
+										Nashville, TN 00000<br />
+										United States of America</span>
+									</div>
+								</section>
+							</section>
+						</div>
+					</section> -->
+
+		<!-- Footer -->
+		<!-- <footer id="footer">
+					<div class="inner1">
+						 <ul class="icons">
+							 <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+		<!-- <li><a href="https://github.com/SanketKuwar" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/sanketk99/" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						</ul>  -->
+		<!-- <ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+						</ul> -->
+		<!-- </div>
+				</footer> 
+			</div>  -->
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+
+
+
+</body>
+
+</html>
